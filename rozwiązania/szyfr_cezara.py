@@ -7,3 +7,10 @@ for l in list:
     # trzeba zawinąć do długości alfabetu!
     index = index % len(alfabet)
     print(alfabet[index], end="")
+
+#--- inna wersja     
+print()
+klucz=klucz%len(alfabet)
+alfabet2 = alfabet[klucz:] + alfabet[:klucz]
+for i in list:
+    print(alfabet2[alfabet.find(i)], end="")
